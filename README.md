@@ -1,5 +1,7 @@
 # In-vehicle-coupon-cat-data-analysis
 
+# Interpretable Classification using Rule Sets
+
 ## Overview
 
 This project explores the dataset collected via a survey on Amazon Mechanical Turk to predict whether a driver will accept a coupon based on various driving scenarios. The dataset and related research are detailed in the paper by Wang, Tong, Cynthia Rudin, Finale Doshi-Velez, Yimin Liu, Erica Klampfl, and Perry MacNeille titled "A Bayesian Framework for Learning Rule Sets for Interpretable Classification," published in *The Journal of Machine Learning Research*.
@@ -67,6 +69,43 @@ This project explores the dataset collected via a survey on Amazon Mechanical Tu
    - Included 7 selected variables
    - Structure: 5 x 3 hidden layers
 
+### Formulas
+
+#### Logistic Regression
+The logistic regression model is defined as:
+
+\[ P(Y=1|X) = \frac{1}{1 + e^{-(\beta_0 + \beta_1X_1 + \beta_2X_2 + ... + \beta_nX_n)}} \]
+
+Where:
+- \( P(Y=1|X) \) is the probability of the coupon being accepted.
+- \( \beta_0, \beta_1, ..., \beta_n \) are the coefficients of the model.
+- \( X_1, X_2, ..., X_n \) are the predictor variables.
+
+#### Interaction Terms
+To include interaction terms between two variables, for instance between Bar Coupon and Bar Frequency, the model is:
+
+\[ \text{Interaction Term} = \beta_3 (\text{Bar Coupon} \times \text{Bar Frequency}) \]
+
+#### LASSO Regression
+LASSO modifies the cost function of the linear regression to include the absolute value of the magnitude of the coefficients:
+
+\[ \text{Cost Function} = \sum_{i=1}^{n} \left( y_i - \beta_0 - \sum_{j=1}^{p} \beta_j x_{ij} \right)^2 + \lambda \sum_{j=1}^{p} |\beta_j| \]
+
+Where:
+- \( \lambda \) is the penalty parameter.
+
+#### Artificial Neural Network (ANN)
+For the ANN, the forward propagation for one hidden layer is given by:
+
+\[ Z^{[1]} = W^{[1]}X + b^{[1]} \]
+\[ A^{[1]} = g(Z^{[1]}) \]
+\[ Z^{[2]} = W^{[2]}A^{[1]} + b^{[2]} \]
+\[ \hat{Y} = g(Z^{[2]}) \]
+
+Where:
+- \( W \) and \( b \) are the weights and biases.
+- \( g \) is the activation function.
+
 ### Performance Metrics
 
 - **Logistic Regression (Full Model)**
@@ -102,4 +141,4 @@ This project explores the dataset collected via a survey on Amazon Mechanical Tu
 
 ---
 
-This README provides an overview of the project, details about the dataset, the methodology used, performance metrics of different models, and the final conclusions.
+This updated README provides an overview of the project, details about the dataset, the methodology used, performance metrics of different models, relevant formulas, and the final conclusions.
