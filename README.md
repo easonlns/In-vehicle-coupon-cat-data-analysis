@@ -1,6 +1,4 @@
-# In-vehicle-coupon-cat-data-analysis
-
-# Interpretable Classification using Rule Sets
+![image](https://github.com/user-attachments/assets/e53ed775-401d-45c4-a808-9bf3ada78efe)# In-vehicle-coupon-cat-data-analysis
 
 ## Overview
 
@@ -126,6 +124,8 @@ Where:
   - Accuracy: 67.67%
   - AIC: 13325
   - F1 Score: 0.6094
+  ![image](https://github.com/user-attachments/assets/7cf8e72a-09a0-4a22-b300-05032ff16050)
+
 
 ## Conclusion
 
@@ -138,7 +138,3 @@ Where:
 ## References
 
 - Wang, Tong, Cynthia Rudin, Finale Doshi-Velez, Yimin Liu, Erica Klampfl, and Perry MacNeille. "A Bayesian framework for learning rule sets for interpretable classification." *The Journal of Machine Learning Research* 18, no. 1 (2017): 2357-2393.
-
----
-
-This updated README provides an overview of the project, details about the dataset, the methodology used, performance metrics of different models, relevant formulas, and the final conclusions.
