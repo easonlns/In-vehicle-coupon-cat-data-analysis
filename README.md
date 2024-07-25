@@ -124,8 +124,6 @@ Where:
   - Accuracy: 67.67%
   - AIC: 13325
   - F1 Score: 0.6094
-  ![image](https://github.com/user-attachments/assets/7cf8e72a-09a0-4a22-b300-05032ff16050)
-
 
 ## Conclusion
 
