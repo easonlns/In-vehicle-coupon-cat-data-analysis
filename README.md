@@ -125,7 +125,7 @@ Where:
   - AIC: 13325
   - F1 Score: 0.6094
 
-\![image](https://github.com/user-attachments/assets/e53ed775-401d-45c4-a808-9bf3ada78efe)
+![image](https://github.com/user-attachments/assets/e53ed775-401d-45c4-a808-9bf3ada78efe)
 
 ## Conclusion
 
