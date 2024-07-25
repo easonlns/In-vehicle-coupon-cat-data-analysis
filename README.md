@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e53ed775-401d-45c4-a808-9bf3ada78efe)# In-vehicle-coupon-cat-data-analysis
+# In-vehicle-coupon-cat-data-analysis
 
 ## Overview
 
@@ -124,6 +124,7 @@ Where:
   - Accuracy: 67.67%
   - AIC: 13325
   - F1 Score: 0.6094
+![image](https://github.com/user-attachments/assets/e53ed775-401d-45c4-a808-9bf3ada78efe)
 
 ## Conclusion
 
