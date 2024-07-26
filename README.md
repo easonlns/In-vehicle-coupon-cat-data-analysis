@@ -72,7 +72,7 @@ This project explores the dataset collected via a survey on Amazon Mechanical Tu
 #### Logistic Regression
 The logistic regression model is defined as:
 
-\[ P(Y=1|X) = \frac{1}{1 + e^{-(\beta_0 + \beta_1X_1 + \beta_2X_2 + ... + \beta_nX_n)}} \]
+\$$P(Y=1|X) = \frac{1}{1 + e^{-(\beta_0 + \beta_1X_1 + \beta_2X_2 + ... + \beta_nX_n)}} \$$
 
 Where:
 - \( P(Y=1|X) \) is the probability of the coupon being accepted.
