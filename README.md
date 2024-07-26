@@ -75,34 +75,34 @@ The logistic regression model is defined as:
 \$$P(Y=1|X) = \frac{1}{1 + e^{-(\beta_0 + \beta_1X_1 + \beta_2X_2 + ... + \beta_nX_n)}} \$$
 
 Where:
-- \( P(Y=1|X) \) is the probability of the coupon being accepted.
-- \( \beta_0, \beta_1, ..., \beta_n \) are the coefficients of the model.
-- \( X_1, X_2, ..., X_n \) are the predictor variables.
+- \$$( P(Y=1|X) \)$$ is the probability of the coupon being accepted.
+- \$$( \beta_0, \beta_1, ..., \beta_n \)$$ are the coefficients of the model.
+- \$$( X_1, X_2, ..., X_n \)$$ are the predictor variables.
 
 #### Interaction Terms
 To include interaction terms between two variables, for instance between Bar Coupon and Bar Frequency, the model is:
 
-\[ \text{Interaction Term} = \beta_3 (\text{Bar Coupon} \times \text{Bar Frequency}) \]
+\ \$$text{Interaction Term} = \beta_3 (\text{Bar Coupon} \times \text{Bar Frequency}) \$$
 
 #### LASSO Regression
 LASSO modifies the cost function of the linear regression to include the absolute value of the magnitude of the coefficients:
 
-\[ \text{Cost Function} = \sum_{i=1}^{n} \left( y_i - \beta_0 - \sum_{j=1}^{p} \beta_j x_{ij} \right)^2 + \lambda \sum_{j=1}^{p} |\beta_j| \]
+\$$ \text{Cost Function} = \sum_{i=1}^{n} \left( y_i - \beta_0 - \sum_{j=1}^{p} \beta_j x_{ij} \right)^2 + \lambda \sum_{j=1}^{p} |\beta_j| \$$
 
 Where:
-- \( \lambda \) is the penalty parameter.
+- \$$( \lambda \)$$ is the penalty parameter.
 
 #### Artificial Neural Network (ANN)
 For the ANN, the forward propagation for one hidden layer is given by:
 
-\[ Z^{[1]} = W^{[1]}X + b^{[1]} \]
-\[ A^{[1]} = g(Z^{[1]}) \]
-\[ Z^{[2]} = W^{[2]}A^{[1]} + b^{[2]} \]
-\[ \hat{Y} = g(Z^{[2]}) \]
+\$$ Z^{[1]} = W^{[1]}X + b^{[1]} \$$
+\$$ A^{[1]} = g(Z^{[1]}) \$$
+\$$ Z^{[2]} = W^{[2]}A^{[1]} + b^{[2]} \$$
+\$$ \hat{Y} = g(Z^{[2]}) \$$
 
 Where:
-- \( W \) and \( b \) are the weights and biases.
-- \( g \) is the activation function.
+- \$$( W \)$$ and \$$( b \)$$ are the weights and biases.
+- \$$( g \)$$ is the activation function.
 
 ### Performance Metrics
 
